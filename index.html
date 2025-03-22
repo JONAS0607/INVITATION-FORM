@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Invited Form</title>
+
+  <link rel="stylesheet" href="styles/index.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Leckerli+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <div id="app">
+    <aside>
+      <div class="brand">
+        <div class="title">
+          <img id="logo" src="./assets/images/Logo.svg" alt="logo cone de festa">
+          <div class="text">
+            <h1>Festive</h1>
+            <p>Crie um convite digital para o seu evento</p>
+          </div>
+        </div>
+        <img src="./assets/images/Background.png" alt="Fatia de bolo de aniversário" class="aside-image-background">
+      </div>
+    </aside>
+    <main>
+      <div class="invite">
+        <h1>Crie seu convite</h1>
+        <form action="#" method="post" enctype="multipart/form-data">
+          <fieldset class="about-event">
+            <legend>Sobre o evento</legend>
+            <div class="input-wrapper">
+              <labeL for="event-name">Título</labeL>
+              <input type="text" id="event-name" placeholder="Nome do Evento" name="event-name" required>
+            </div>
+            <div class="flex">
+              <div class="input-wrapper flex-4">
+                <label for="begin">Início</label>
+                <input type="datetime-local" id="begin" name="begin" required>
+              </div>
+              <div class="input-wrapper flex-3">
+                <label for="end">Fim</label>
+                <input type="datetime-local" id="end" name="end" required>
+              </div>
+              
+              
+              <div class="radio-wrapper flex-2">
+                <p>Tipo</p>
+                <div class="radio-inner">
+                  <div class="radio-image"></div>
+                  <label for="classroom">Presencial</label>
+                  <input type="radio" id="classroom" name="type-shift" value="classroom" checked > 
+                  <img src="assets/icons/building-2.svg" alt="build icon">
+                </div>
+                <div class="radio-inner">
+                  <div class="radio-image"></div>
+                  <label for="online">Online</label>
+                  <input type="radio" id="online" name="type-shift" value="online">
+                  <img src="assets/icons/video.svg" alt="video icon">
+                </div>
+              </div>
+
+
+              <div class="input-wrapper flex-1">
+                <label for="place">Local</label>
+                <input type="text" id="place" name="place" required>
+              </div>
+            </div>
+          <div class="input-wrapper">
+            <label for="description">Descrição</label>
+            <textarea id="description" name="description" required></textarea>
+          </div>
+          </fieldset>
+        </form>
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+
+</html>
