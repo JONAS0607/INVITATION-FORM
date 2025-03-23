@@ -40,13 +40,16 @@ aside{
     z-index: -1;
   }
 }
-
-.invite{
-
+main{
+  overflow: auto;
   width: 820px;
-  margin-top: 20px;
-  margin-right: 20px;
   background-color: var(--shape-body);
   border-radius: 12px;
-  height: 100vh;
+  
+}
+.invite{ 
+  margin-top: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  
 }
