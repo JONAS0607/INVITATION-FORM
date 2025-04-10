@@ -88,7 +88,7 @@ INVITATION-FORM/
 
 ## 📸 Prévia do Projeto
 
-Adicione aqui uma captura de tela ou GIF do projeto para ilustrar como ele funciona.
+[CRIE SEU CONVITE](https://jonas0607.github.io/INVITATION-FORM/)
 
 ---
 
