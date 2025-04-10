@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
+    <!-- Conexões com Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
+    <!-- Configurações básicas da página -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Festivite</title>
     <link rel="stylesheet" href="styles/index.css" />
 
+    <!-- Importação das fontes -->
     <link
       href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Leckerli+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
       rel="stylesheet"
@@ -16,7 +19,9 @@
   </head>
   <body>
     
+    <!-- Container principal que divide a página em duas partes -->
     <div id="app">
+      <!-- Barra lateral com logo e título -->
       <aside>
         <div class="aside-container">
           <header>
@@ -26,11 +31,14 @@
           </header>
         </div>
       </aside>
+
+      <!-- Área principal com o formulário -->
       <main>
         <div class="main-container">
           <h2>Crie seu convite</h2>
 
           <form action="#" method="post" enctype="multipart/form-data">
+            <!-- Seção 1: Informações básicas do evento -->
             <fieldset class="about-event">
               <legend>
                 <img
@@ -62,6 +70,7 @@
                 </div>
               </div>
 
+              <!-- Opções de tipo de evento (Presencial/Online) -->
               <div class="flex">
                 <div class="input-wrapper">
                   <label for="type-event">Tipo</label>
@@ -104,6 +113,7 @@
               </div>
             </fieldset>
 
+            <!-- Seção 2: Personalização visual do convite -->
             <fieldset class="custom">
               <legend>
                 <img
@@ -113,6 +123,7 @@
                 <span>Personalização</span>
               </legend>
 
+              <!-- Seleção de cores -->
               <div class="input-wrapper">
                 <label for="color"> Cor principal </label>
 
@@ -147,13 +158,13 @@
                   <div class="radio-color green">
                     <input type="radio" name="color" id="green" />
                   </div>
-
                   <div class="radio-color cyan">
                     <input type="radio" name="color" id="cyan" />
                   </div>
                 </div>
               </div>
 
+              <!-- Seleção de temas -->
               <div class="input-wrapper">
                 <label for="theme">Tema do evento</label>
 
@@ -232,6 +243,7 @@
                 </div>
               </div>
 
+              <!-- Configurações de estilo e upload de imagem -->
               <div class="flex">
                 <div class="input-wrapper flex-2">
                   <label for="style-mode">Estilo</label>
@@ -276,6 +288,7 @@
               </div>
             </fieldset>
 
+            <!-- Seção 3: Informações de contato -->
             <fieldset class="user-data">
               <legend>
                 <img src="assets/icons/contact.svg" alt="Ícone de contato" />
@@ -326,6 +339,7 @@
 
             <div class="separator"></div>
 
+            <!-- Área de termos e condições -->
             <div class="terms-wrapper input-wrapper checkbox-wrapper">
               <div class="checkbox-image"></div>
               <input type="checkbox" name="terms" id="terms" />
@@ -362,6 +376,7 @@
               </label>
             </div>
 
+            <!-- Botão de submissão -->
             <div class="actions-wrapper">
               <button>
                 <img src="assets/icons/ticket.svg" alt="Ícone de ticket" />
