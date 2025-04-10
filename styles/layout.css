@@ -1,10 +1,12 @@
 #app {
   display: grid;
-  grid-template-columns: 25% 1fr;
+  grid-template-columns: 1fr 2fr;
   height: 100vh;
+  width: 90%;
   overflow: hidden;
   padding: 2rem;
   gap: 1.25rem;
+  
 }
 
 aside {
@@ -39,6 +41,9 @@ main {
   padding: 5rem 8.125rem;
   background-color: var(--shape-body);
   border-radius: 0.75rem;
+
+  /* Oculta a barra de rolagem */
+  scrollbar-width: none; 
 
   & .main-container {
     max-width: 51.25rem;

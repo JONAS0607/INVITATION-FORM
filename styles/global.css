@@ -41,6 +41,12 @@
 }
 
 body {
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+
+ 
+
   overflow: hidden;
   font: var(--text-content-md);
   color: var(--text-body);
