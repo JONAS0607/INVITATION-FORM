@@ -50,8 +50,7 @@
 }
 
 body{
-  width: 1280px;
-  margin: 0 auto;
+  font: var(--logo);
   color: var(--text-body);
   background-color: var(--shape-background);
 }
